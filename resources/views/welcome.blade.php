@@ -31,6 +31,7 @@
             <div class="auth-bar__actions">
                  <a href="{{ route('logout') }}">Logout</a>
                  <a href="{{ route('landing-cdn') }}">Landing Vue CDN</a>
+                  <a href="{{ route('landing-vue') }}">Landing Vue</a>
             </div>
             @endauth
         </div>

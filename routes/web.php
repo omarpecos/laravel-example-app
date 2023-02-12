@@ -56,3 +56,7 @@ Route::get('/logout', function () {
 Route::get('/landing-cdn', function () {
     return view('vuecdn');
 })->name('landing-cdn');
+
+Route::get('/landing-vue', function () {
+    return view('vue');
+})->name('landing-vue');
