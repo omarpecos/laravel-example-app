@@ -51,3 +51,12 @@ Route::get('/logout', function () {
  
     return redirect('/');
 })->name('logout');
+
+// Vue cdn
+Route::get('/landing-cdn', function () {
+    return view('vuecdn');
+})->name('landing-cdn');
+
+Route::get('/landing-vue', function () {
+    return view('vue');
+})->name('landing-vue');

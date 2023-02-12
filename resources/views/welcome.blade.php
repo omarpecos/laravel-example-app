@@ -12,6 +12,9 @@
                 align-items: center;
                 justify-content: space-between;
             }
+            .auth-bar__actions a{
+                display: block;
+            }
         </style>
     </head>
     <body class="antialiased">
@@ -25,7 +28,11 @@
             @endguest
             @auth
             <h2>Logado, que quieres mas??</h2>
-            <a href="{{ route('logout') }}">Logout</a>
+            <div class="auth-bar__actions">
+                 <a href="{{ route('logout') }}">Logout</a>
+                 <a href="{{ route('landing-cdn') }}">Landing Vue CDN</a>
+                  <a href="{{ route('landing-vue') }}">Landing Vue</a>
+            </div>
             @endauth
         </div>
         @auth
